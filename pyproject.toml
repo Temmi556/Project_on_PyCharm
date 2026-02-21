@@ -1,8 +1,21 @@
 [project]
 name = "udemy-python"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.14"
-dependencies = [
-    "ruff==0.15.2",
-]
+description = ""
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_optional = true
