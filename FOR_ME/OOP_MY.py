@@ -25,4 +25,3 @@ person = Person("John")
 
 person.speak()
 person.swim()
-person.fly()
